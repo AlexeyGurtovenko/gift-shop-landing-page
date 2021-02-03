@@ -1,0 +1,43 @@
+.hero {
+  padding-top: 117px;
+  background-color: $color-lighter-grey;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__content {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+
+    &-container {
+      max-width: 433px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 36px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 56px;
+    color: $color-black;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $color-black;
+    margin-bottom: 70px;
+    margin-top: 55px;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+
+  &__img {
+    flex-basis: 50%;
+  }
+}

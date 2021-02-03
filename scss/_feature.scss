@@ -1,0 +1,40 @@
+.feature {
+  background-color: $color-lighter-grey;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__img {
+    flex-basis: 50%;
+  }
+
+  &__content {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content-container {
+    max-width: 441px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 53px;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: $color-black;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $color-black;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+}

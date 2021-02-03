@@ -1,0 +1,46 @@
+.btn {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+
+  &_primary {
+    color: $color-white;
+    background-color: $color-orange;
+    border: none;
+
+    &_outlined {
+      background-color: transparent;
+      border: 1px solid $color-orange;
+      color: $color-orange;
+    }
+  }
+
+  &_secondary {
+    color: $color-white;
+    background-color: $color-black;
+    border: none;
+
+    &_outlined {
+      background-color: transparent;
+      border: 1px solid $color-black;
+      color: $color-black;
+    }
+  }
+
+  &_size_sm {
+    width: 150px;
+    height: 44px;
+  }
+
+  &_size_m {
+    width: 200px;
+    height: 48px;
+  }
+
+  &_size_lg {
+    width: 200px;
+    height: 60px;
+  }
+}

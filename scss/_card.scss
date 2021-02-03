@@ -1,0 +1,36 @@
+.card {
+  margin: 0 15px;
+  background-color: $color-lighter-grey;
+  transition: 0.3s;
+  &__img {
+  }
+
+  &__title {
+    padding: 24px 24px 74px 24px;
+    font-size: 20px;
+    color: $color-black;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0px 24px 24px 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: $color-black;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "›";
+      position: absolute;
+      right: -15%;
+      top: 0;
+      transform: translateY(7%);
+    }
+  }
+
+  &:hover {
+    background-color: $color-white;
+    box-shadow: 10px 10px 15px rgba($color-black, 0.05);
+  }
+}

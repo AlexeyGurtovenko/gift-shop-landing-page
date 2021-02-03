@@ -1,0 +1,24 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 96px;
+
+  &__title {
+    font-size: 32px;
+    color: $color-black;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: $color-black;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 60px;
+  }
+
+  &__cards-wrapper {
+    display: flex;
+  }
+}

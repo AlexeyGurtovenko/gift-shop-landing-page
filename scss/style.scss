@@ -1,1 +1,116 @@
 @import "config";
+@import "button";
+@import "card";
+@import "header";
+@import "hero";
+@import "feature";
+@import "posts";
+@import "cta";
+
+.blogs {
+  margin-top: 86px;
+  padding-bottom: 80px;
+
+  &__wrapper {
+    margin: 0px 135px;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: $color-black;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: $color-black;
+    text-align: center;
+    padding-top: 26px;
+  }
+
+  &__poster-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 79px;
+    padding-bottom: 40px;
+  }
+}
+
+.poster {
+  &__img {
+    max-width: 400px;
+  }
+
+  &__description {
+    color: $color-white;
+    background-color: $color-brownish;
+    width: 100%;
+    max-width: 770px;
+  }
+
+  &__name {
+    margin-left: 77px;
+    font-size: 14px;
+    padding-top: 60px;
+  }
+
+  &__title {
+    margin-left: 77px;
+    font-size: 48px;
+    max-width: 495px;
+    padding-top: 28px;
+  }
+
+  &__link {
+    display: block;
+    margin-left: 77px;
+    color: $color-white;
+    text-decoration: none;
+    margin-top: 80px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.blog {
+  &__cards-wrapper {
+    display: flex;
+  }
+}
+
+.blog-card {
+  padding: 48px;
+  transition: 0.3s;
+  background-color: $color-lighter-grey;
+
+  & + & {
+    margin-left: 30px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $color-black;
+    padding-top: 30px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    color: $color-black;
+    text-decoration: none;
+    margin-top: 45px;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    box-shadow: 10px 10px 15px rgba($color-black, 0.05);
+  }
+}
+
+.footer {
+}
