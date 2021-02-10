@@ -51,6 +51,30 @@ $color-lighter-grey-1: #f2f2f2;
 $color-orange: #f7941e;
 
 // ===================================================
+//  breakpoints (bootstrap 4)
+// ===================================================
+// X-Small devices (portrait phones, less than 576px)
+
+// Small devices (landscape phones, less than 768px)
+$screen-xs: 576px;
+$screen-xs-max: 767px;
+
+// Medium devices (tablets, less than 992px)
+$screen-s: 768px;
+$screen-s-max: 991px;
+
+// Large devices (desktops, less than 1200px)
+$screen-md: 992px;
+$screen-md-max: 1199px;
+
+// X-Large devices (large desktops, less than 1400px)
+$screen-lg: 1200px;
+$screen-lg-max: 1399px;
+
+// XX-Large devices (larger desktops)
+$screen-xl: 1400px;
+
+// ===================================================
 //  basic styles correction
 // ===================================================
 body {
@@ -58,13 +82,13 @@ body {
   font-weight: normal;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .responsive-img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
 }

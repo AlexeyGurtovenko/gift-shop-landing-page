@@ -11,9 +11,9 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="header__logo">
-            <img src="./img/logo.png" alt="logo" />
-          </div>
+          <a class="header__logo" href="#">
+            <img src="./img/logo.svg" alt="logo" />
+          </a>
           <ul class="nav">
             <li><a class="nav__item" href="#">Home</a></li>
             <li><a class="nav__item" href="#">About Us</a></li>
@@ -24,6 +24,11 @@
           <button class="header__btn btn btn_primary_outlined btn_size_sm">
             GIFT FINDER
           </button>
+          <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
         </div>
       </div>
     </header>
@@ -193,7 +198,45 @@
     </section>
     <!-- /blog -->
     <!-- footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__nav">
+            <a href="#" class="footer__link">Home</a>
+            <a href="#" class="footer__link">About</a>
+            <div class="footer__logo">
+              <img src="./img/logo.svg" alt="logo" class="responsive-img" />
+            </div>
+            <a href="#" class="footer__link">Service</a>
+            <a href="#" class="footer__link">Blog</a>
+          </div>
+          <div class="hr-line"></div>
+          <div class="footer__social-links">
+            <a class="footer__social-link" href="#">
+              <span class="icon icon-facebook"></span>
+            </a>
+            <a class="footer__social-link" href="#">
+              <span class="icon icon-twitter"></span>
+            </a>
+            <a class="footer__social-link" href="#">
+              <span class="icon icon-instagram"></span>
+            </a>
+            <a class="footer__social-link" href="#">
+              <span class="icon icon-youtube"></span>
+            </a>
+            <a class="footer__social-link" href="#">
+              <span class="icon icon-pinterest"></span>
+            </a>
+          </div>
+          <div class="footer__copyright-wrapper">
+            <div class="footer__copyright-year">&copy; 2010 &mdash; 2020</div>
+            <a class="footer__copyright-terms" href="#"
+              >Privacy &mdash; Terms</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- /footer -->
   </body>
 </html>

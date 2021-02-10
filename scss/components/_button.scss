@@ -4,6 +4,7 @@
   border-radius: 5px;
   display: inline-block;
   cursor: pointer;
+  transition: 0.3s;
 
   &_primary {
     color: $color-white;
@@ -14,6 +15,15 @@
       background-color: transparent;
       border: 1px solid $color-orange;
       color: $color-orange;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-orange;
+      }
+    }
+
+    &:hover {
+      box-shadow: 5px 5px 10px rgba($color-black, 0.35);
     }
   }
 
@@ -26,6 +36,14 @@
       background-color: transparent;
       border: 1px solid $color-black;
       color: $color-black;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-black;
+      }
+    }
+    &:hover {
+      box-shadow: 5px 5px 10px rgba($color-black, 0.35);
     }
   }
 

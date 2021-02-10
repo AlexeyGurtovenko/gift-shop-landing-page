@@ -13,10 +13,19 @@
 
   &__logo {
     margin-left: 80px;
+
+    @media (max-width: $screen-xs-max) {
+      display: block;
+      margin-left: 15px;
+    }
   }
 
   &__btn {
     margin-right: 32px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -29,6 +38,35 @@
     text-decoration: none;
     font-size: 18px;
     color: $color-black;
-    padding: 0px 15px;
+    padding: 0px 15px 5px 15px;
+
+    &:hover {
+      border-bottom: 2px solid $color-black;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+  margin-right: 50px;
+  cursor: pointer;
+
+  &__line {
+    width: 35px;
+    height: 3px;
+    background-color: $color-black;
+
+    & + & {
+      margin-top: 5px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    display: block;
+    margin-right: 15px;
   }
 }

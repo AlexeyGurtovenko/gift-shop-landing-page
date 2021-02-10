@@ -1,8 +1,11 @@
 .posts {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   padding-top: 96px;
+
+  // @include for-small-phones-only {
+  //   padding-top: 45px;
+  // }
 
   &__title {
     font-size: 32px;
@@ -14,11 +17,17 @@
     font-size: 18px;
     color: $color-black;
     text-align: center;
-    padding-top: 36px;
+    padding-top: 21px;
     padding-bottom: 60px;
+
+    // @include for-small-phones-only {
+    //   padding-bottom: 30px;
+    // }
   }
 
   &__cards-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

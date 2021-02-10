@@ -1,12 +1,22 @@
 .cta {
   background-color: $color-orange;
-  margin-top: 132px;
+  margin-top: 117px;
   padding-top: 81px;
   padding-bottom: 81px;
+
+  // @include for-small-phones-only {
+  //   margin-top: 0px;
+  //   padding-top: 40px;
+  //   padding-bottom: 40px;
+  // }
 
   &__wrapper {
     display: flex;
     align-items: center;
+
+    // @include for-small-phones-only {
+    //   flex-direction: column;
+    // }
   }
 
   &__content {
@@ -19,6 +29,11 @@
     &-container {
       max-width: 325px;
       margin-left: 73px;
+
+      // @include for-small-phones-only {
+      //   margin: 0;
+      //   padding-bottom: 15px;
+      // }
     }
   }
 
@@ -36,13 +51,28 @@
 
   &__buttons-wrapper {
     flex-basis: 50%;
+    display: flex;
+    align-items: center;
+
+    // @include for-small-phones-only {
+    //   flex-direction: column;
+    // }
   }
 
   &__btn-1 {
     margin-left: 70px;
+
+    // @include for-small-phones-only {
+    //   margin-left: 0;
+    //   margin-bottom: 20px;
+    // }
   }
 
   &__btn-2 {
-    margin-left: 11px;
+    margin-left: 15px;
+
+    // @include for-small-phones-only {
+    //   margin: 0;
+    // }
   }
 }
