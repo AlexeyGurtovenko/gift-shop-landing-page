@@ -27,6 +27,11 @@
     color: $color-black;
     text-align: center;
     padding-top: 26px;
+
+    @media (max-width: $screen-s) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
   }
 
   &__poster-wrapper {
@@ -63,6 +68,10 @@
       padding-top: 35px;
       padding-bottom: 35px;
     }
+
+    @media (max-width: $screen-s) {
+      padding-left: 40px;
+    }
   }
 
   &__name {
@@ -79,7 +88,7 @@
     max-width: 495px;
 
     @media (max-width: $screen-xs) {
-      padding: 20px 0;
+      padding: 20px 20px 20px 0;
     }
 
     @media (max-width: $screen-xs-max) {
