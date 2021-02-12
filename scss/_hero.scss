@@ -5,8 +5,8 @@
   &__wrapper {
     display: flex;
 
-    @media (max-width: $screen-xs) {
-      flex-direction: column;
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column-reverse;
       align-items: center;
     }
   }
@@ -27,13 +27,12 @@
       font-size: 32px;
       margin-left: 36px;
 
-      // @include for-small-phones-only {
-      //   justify-content: center;
-      //   padding: 30px;
-      // }
-
-      // @include for-portrait-tablets-up {
-      // }
+      @media (max-width: $screen-xs-max) {
+        justify-content: center;
+        padding: 30px;
+        margin: 0;
+        text-align: center;
+      }
     }
   }
 
@@ -42,13 +41,9 @@
     color: $color-black;
     font-size: 56px;
 
-    // @include for-portrait-tablets-up {
-    //   font-size: 42px;
-    // }
-
-    // @include for-landscape-tablets-up {
-    //   font-size: 56px;
-    // }
+    @media (max-width: $screen-md) {
+      font-size: 40px;
+    }
   }
 
   &__text {
@@ -57,25 +52,25 @@
     margin-bottom: 63px;
     margin-top: 40px;
 
-    // @include for-landscape-tablets-up {
-    //   margin-bottom: 70px;
-    //   margin-top: 55px;
-    // }
+    @media (max-width: $screen-md) {
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
   }
 
   &__btn {
     align-self: flex-start;
 
-    // @include for-small-phones-only {
-    //   align-self: center;
-    // }
+    @media (max-width: $screen-xs-max) {
+      align-self: center;
+    }
   }
 
   &__img {
     flex-basis: 50%;
 
-    // @include for-small-phones-only {
-    //   padding: 10px;
-    // }
+    @media (max-width: $screen-xs-max) {
+      padding: 5px;
+    }
   }
 }

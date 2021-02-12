@@ -77,6 +77,10 @@ $screen-xl: 1400px;
 // ===================================================
 //  basic styles correction
 // ===================================================
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;

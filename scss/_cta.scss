@@ -4,19 +4,17 @@
   padding-top: 81px;
   padding-bottom: 81px;
 
-  // @include for-small-phones-only {
-  //   margin-top: 0px;
-  //   padding-top: 40px;
-  //   padding-bottom: 40px;
-  // }
+  @media (max-width: $screen-md) {
+    margin-top: 20px;
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
 
-    // @include for-small-phones-only {
-    //   flex-direction: column;
-    // }
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -30,10 +28,11 @@
       max-width: 325px;
       margin-left: 73px;
 
-      // @include for-small-phones-only {
-      //   margin: 0;
-      //   padding-bottom: 15px;
-      // }
+      @media (max-width: $screen-md) {
+        margin: 0;
+        padding-bottom: 15px;
+        text-align: center;
+      }
     }
   }
 
@@ -54,25 +53,25 @@
     display: flex;
     align-items: center;
 
-    // @include for-small-phones-only {
-    //   flex-direction: column;
-    // }
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+    }
   }
 
   &__btn-1 {
     margin-left: 70px;
 
-    // @include for-small-phones-only {
-    //   margin-left: 0;
-    //   margin-bottom: 20px;
-    // }
+    @media (max-width: $screen-md) {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__btn-2 {
     margin-left: 15px;
 
-    // @include for-small-phones-only {
-    //   margin: 0;
-    // }
+    @media (max-width: $screen-md) {
+      margin: 0;
+    }
   }
 }

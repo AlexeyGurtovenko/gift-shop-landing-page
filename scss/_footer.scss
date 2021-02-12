@@ -2,9 +2,9 @@
   padding-top: 110px;
   background-color: $color-light-grey;
 
-  // @include for-small-phones-only {
-  //   padding-top: 55px;
-  // }
+  @media (max-width: $screen-xs-max) {
+    padding-top: 55px;
+  }
 
   &__wrapper {
   }
@@ -15,9 +15,9 @@
     justify-content: center;
     padding-bottom: 46px;
 
-    // @include for-small-phones-only {
-    //   flex-direction: column;
-    // }
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+    }
   }
 
   &__link {
@@ -29,10 +29,10 @@
     & + & {
       padding-left: 81px;
 
-      // @include for-small-phones-only {
-      //   padding-left: 0px;
-      //   padding-top: 20px;
-      // }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 0px;
+        padding-top: 20px;
+      }
     }
   }
 
@@ -53,6 +53,11 @@
     padding: 0px 141px;
     filter: invert(57%) sepia(99%) saturate(525%) hue-rotate(345deg)
       brightness(98%) contrast(97%);
+
+    @media (max-width: $screen-xs-max) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 
   &__copyright-wrapper {
@@ -64,9 +69,9 @@
 
     font-size: 14px;
 
-    // @include for-small-phones-only {
-    //   margin-top: 30px;
-    // }
+    @media (max-width: $screen-xs-max) {
+      margin-top: 30px;
+    }
   }
 
   &__copyright-year {
