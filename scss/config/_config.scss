@@ -81,9 +81,14 @@ $screen-xl: 1400px;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 .container {
@@ -95,4 +100,21 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -118px;
+  height: 118px;
+  visibility: hidden;
+
+  @media (max-width: $screen-xs-max) {
+    margin-top: -84px;
+    height: 84px;
+  }
 }

@@ -15,26 +15,34 @@
             <img src="./img/logo.svg" alt="logo" />
           </a>
           <ul class="nav">
-            <li><a class="nav__item" href="#">Home</a></li>
-            <li><a class="nav__item" href="#">About Us</a></li>
-            <li><a class="nav__item" href="#">Services</a></li>
-            <li><a class="nav__item" href="#">Blogs</a></li>
+            <li>
+              <a class="nav__item" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="nav__item" href="#about">About Us</a>
+            </li>
+            <li>
+              <a class="nav__item" href="#services">Services</a>
+            </li>
+            <li>
+              <a class="nav__item" href="#blogs">Blogs</a>
+            </li>
           </ul>
 
           <button class="header__btn btn btn_primary_outlined btn_size_sm">
             GIFT FINDER
           </button>
           <div class="burger">
-            <div class="burger__line"></div>
-            <div class="burger__line"></div>
-            <div class="burger__line"></div>
+            <div class="burger__line line-1"></div>
+            <div class="burger__line line-2"></div>
+            <div class="burger__line line-3"></div>
           </div>
         </div>
       </div>
     </header>
     <!-- /header -->
     <!-- hero -->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container">
         <div class="hero__wrapper">
           <div class="hero__content">
@@ -63,7 +71,7 @@
     </section>
     <!-- /hero -->
     <!-- feature -->
-    <section class="feature">
+    <section class="feature" id="about">
       <div class="container">
         <div class="feature__wrapper">
           <div class="feature__img">
@@ -88,11 +96,11 @@
     </section>
     <!-- / feature -->
     <!-- posts -->
-    <section class="posts">
+    <section class="posts" id="services">
       <div class="container">
         <div class="posts__title">Gifts for all Ocasions</div>
         <div class="posts__subtitle">
-          "Try our web appto find the best gifts for all ocasions"
+          "Try our web app to find the best gifts for all ocasions"
         </div>
         <div class="posts__cards-wrapper">
           <div class="card">
@@ -150,7 +158,7 @@
     </section>
     <!-- /cta -->
     <!-- blog -->
-    <section class="blogs">
+    <section class="blogs" id="blogs">
       <div class="container">
         <div class="blogs__wrapper">
           <div class="blogs__title">Our Best Blogs Ever</div>
@@ -238,5 +246,6 @@
       </div>
     </footer>
     <!-- /footer -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
